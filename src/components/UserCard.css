@@ -75,6 +75,7 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   font-weight: bold;
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
 }
 
 .card-text {
@@ -122,7 +123,7 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding-block: var(--padding);
-  font-size: clamp(0.8rem, 2.2vw, 0.9rem);
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
 }
 
 .summary-item p {
