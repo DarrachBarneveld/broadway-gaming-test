@@ -23,7 +23,18 @@ const TaskOne: FunctionComponent = () => {
   return (
     <div>
       <WordScorer addWordToList={addWordToList} />
-      <WordList words={words} setWords={setWords} />
+
+      {words.length > 0 ? (
+        <WordList words={words} setWords={setWords} />
+      ) : (
+        <div className="container">
+          <h2 className="label-text">No words yet</h2>
+          <p className="text">
+            "Enter words into the list to score them and filter them based on
+            their score, length, and alphabetical order."
+          </p>
+        </div>
+      )}
     </div>
   );
 };

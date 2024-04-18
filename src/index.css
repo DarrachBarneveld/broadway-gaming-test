@@ -126,6 +126,15 @@ main {
   font-weight: bold;
 }
 
+.text {
+  padding-block: var(--padding);
+  line-height: 2.5ch;
+  text-align: center;
+  max-width: 450px;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: var(--off-black);
+}
+
 .border-b {
   border-bottom: 1px solid var(--light-gray);
   max-width: 1200px;

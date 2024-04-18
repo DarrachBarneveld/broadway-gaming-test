@@ -158,11 +158,19 @@ const TaskTwo: FunctionComponent<TestComponent2Props> = () => {
 
       {error && <p>{error}</p>}
 
-      {sortedAndFilteredUsers.length > 0 && (
+      {sortedAndFilteredUsers.length > 0 ? (
         <div className="user-cards-container">
           {sortedAndFilteredUsers.map((user, index) => (
             <UserCard user={user} key={user.id.value} index={index} />
           ))}
+        </div>
+      ) : (
+        <div className="container">
+          <h2 className="label-text">No Users yet</h2>
+          <p className="text">
+            "Fetch random users to score them and filter them based on their
+            score, gender, name and search inputs."
+          </p>
         </div>
       )}
     </div>
