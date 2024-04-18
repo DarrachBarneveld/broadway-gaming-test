@@ -9,9 +9,9 @@ export const calculateScore = (word: string) => {
     const latinChar = deburr(char);
 
     // Use regex to test if the character is a letter in latin alphabet
-    // If not, return a 0 score
+    // If not, return a random score from 0 - 26
     if (!/^[a-z]$/i.test(latinChar)) {
-      return 0;
+      return Math.floor(Math.random() * 26) + 1;
     }
 
     return latinChar.charCodeAt(0) - 96;
