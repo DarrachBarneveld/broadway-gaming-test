@@ -95,7 +95,7 @@ const UserCard: FunctionComponent<UserCardProps> = ({ user, index }) => {
           </div>
           <div className="summary-item">
             <span>Gender</span>
-            <p>{user.gender.split("")[0]}</p>
+            <p>{user.gender}</p>
           </div>
           <div className="summary-item">
             <span>Country</span>
