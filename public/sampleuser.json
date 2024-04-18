@@ -1,0 +1,56 @@
+{
+  "gender": "male",
+  "name": {
+    "title": "Mr",
+    "first": "Deniz",
+    "last": "Solmaz"
+  },
+  "location": {
+    "street": {
+      "number": 3636,
+      "name": "Abanoz Sk"
+    },
+    "city": "Niğde",
+    "state": "Uşak",
+    "country": "Turkey",
+    "postcode": 81777,
+    "coordinates": {
+      "latitude": "68.3148",
+      "longitude": "-102.1465"
+    },
+    "timezone": {
+      "offset": "-3:30",
+      "description": "Newfoundland"
+    }
+  },
+  "email": "deniz.solmaz@example.com",
+  "login": {
+    "uuid": "3b556acc-f39e-422a-b8c5-132f20d229c2",
+    "username": "smallgoose203",
+    "password": "klondike",
+    "salt": "9mJ5ikO8",
+    "md5": "38121270092760bfdb255013e746a823",
+    "sha1": "ff11284717e019f055e04b79f2606e50d3ec5278",
+    "sha256": "c36f079e0ba525a51f3c4cc02b173fcd21ec7a3dbb1cf3d0e8ad6c1cced9b651"
+  },
+  "dob": {
+    "date": "1957-06-19T18:12:58.292Z",
+    "age": 66
+  },
+  "registered": {
+    "date": "2005-11-27T00:21:02.856Z",
+    "age": 18
+  },
+  "phone": "(108)-116-7146",
+  "cell": "(560)-017-0852",
+  "id": {
+    "name": "",
+    "value": null
+  },
+  "picture": {
+    "large": "https://randomuser.me/api/portraits/men/96.jpg",
+    "medium": "https://randomuser.me/api/portraits/med/men/96.jpg",
+    "thumbnail": "https://randomuser.me/api/portraits/thumb/men/96.jpg"
+  },
+  "nat": "TR"
+}

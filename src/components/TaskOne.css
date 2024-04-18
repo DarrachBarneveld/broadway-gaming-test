@@ -1,0 +1,66 @@
+/* CSS exclusive to task 1 component */
+
+.word-form {
+  display: flex;
+  gap: var(--padding);
+  margin-block: var(--padding);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.word-list {
+  list-style: none;
+  margin: var(--padding);
+  padding: calc(var(--padding) * 2);
+  /* background-color: var(--off-black); */
+  border-radius: var(--padding);
+}
+
+.word {
+  position: relative;
+  display: inline-block;
+  padding: var(--padding);
+  margin-block: var(--padding);
+  border-radius: var(--padding);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: var(--padding);
+  font-size: var(--subheading-text-size);
+  text-transform: capitalize;
+  background: white;
+}
+
+.word::before {
+  content: "";
+  border-radius: var(--padding);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  margin: -2px;
+  animation: opacity 1.5s;
+}
+
+.word-value {
+  padding: var(--padding);
+  display: flex;
+  gap: var(--padding);
+}
+
+/* Needed to avoid conflicts with pseduo gradient */
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
