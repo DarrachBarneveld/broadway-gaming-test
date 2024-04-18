@@ -63,6 +63,7 @@ const WordScorer: FunctionComponent<WordScorerProps> = ({ addWordToList }) => {
     };
 
     if (score === 0) return;
+    setWord("");
 
     addWordToList(wordObj);
   };
