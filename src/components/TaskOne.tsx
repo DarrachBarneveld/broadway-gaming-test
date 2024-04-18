@@ -69,14 +69,14 @@ const WordScorer: FunctionComponent<WordScorerProps> = ({ addWordToList }) => {
           id="text"
           type="text"
           value={word}
-          onChange={(e) => setWord(e.target.value)}
-          onKeyDown={(e) => {
-            if (!/[a-zA-Z\s]/.test(e.key)) {
+          onChange={(e) => {
+            if (!/^[a-zA-Z\s]*$/.test(e.target.value)) {
               e.preventDefault();
               setError("Only letters A-Z are allowed");
               return;
             }
             setError("");
+            setWord(e.target.value);
           }}
           placeholder="Enter a word"
         />
