@@ -95,10 +95,6 @@ const UserCard: FunctionComponent<UserCardProps> = ({ user, index }) => {
           </div>
           <div className="summary-item">
             <span>Gender</span>
-
-            {/* <p>
-              <IoIosMale style={{ color: "#0ea5e9" }} />
-            </p> */}
             <p>{user.gender.split("")[0]}</p>
           </div>
           <div className="summary-item">
